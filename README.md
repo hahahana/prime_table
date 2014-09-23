@@ -11,7 +11,7 @@ The program also contains a test that can be run using ```ruby prime_table_spec.
 
 ```generate_primes``` does not scale well for large N and has a time complexity of O(n * sqrt(n)).
 
-```to_multiplication_table```, or, rather the process to create the multiplication table is O(n^2).
+```to_multiplication_table```, or rather, the process to create the multiplication table is O(n^2).
 
 ```pretty_print``` is O(n) since you print a row for each prime up to n.
 
