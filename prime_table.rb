@@ -1,4 +1,3 @@
-require 'prime'
 require './string'
 
 class PrimeTable

@@ -1,3 +1,7 @@
+To run the program, just clone the code and run ```ruby main.rb``` from the directory.
+
+The program also contains a spec that can be run using ```ruby prime_table_spec.rb```.
+
 ### Objective
 
 Write a program that prints out a multiplication table of the first 10 prime numbers.
