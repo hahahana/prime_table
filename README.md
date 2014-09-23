@@ -2,6 +2,9 @@ To run the program, just clone the code and run ```ruby main.rb``` from the dire
 
 The program also contains a spec that can be run using ```ruby prime_table_spec.rb```.
 
+The output should look like this:
+![timestable](https://raw.github.com/hahahana/prime_table/master/screenshot.png)
+
 ### Objective
 
 Write a program that prints out a multiplication table of the first 10 prime numbers.
