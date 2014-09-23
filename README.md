@@ -8,6 +8,7 @@ The program also contains a test that can be run using ```ruby prime_table_spec.
 - You can change the spacing interactively, i.e. you can go to main.rb and change the instantiation of table to PrimeTable.new(nil, 12) and the cells will appear larger upon printing.
 
 **Time complexity:**
+
 ```generate_primes``` does not scale well for large N and has a time complexity of O(n * sqrt(n)).
 
 ```to_multiplication_table```, or, rather the process to create the multiplication table is O(n^2).
