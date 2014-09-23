@@ -41,7 +41,7 @@ class PrimeTable
   alias_method :create_multiplication_table, :to_multiplication_table
 
   def pretty_print
-    create_multiplication_table
+    create_multiplication_table if times_table.nil?
 
     # Print first row w/bar on top
     print_bar
