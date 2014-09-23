@@ -4,22 +4,22 @@ require './string'
 class PrimeTable
   attr_accessor :n, :times_table, :primes, :spacing
 
-  def initialize(n=nil)
+  def initialize(n = nil, spacing = 10)
     if n.nil?
       print("Enter N (must be a positive integer): ")
       n = gets.chomp.to_i
       while n < 1
-        print("Is that a postive integer? Please try again: ")
+        print("That's not a positive integer... Please try again: ")
         n = gets.chomp.to_i
       end
       print("\n")
     end
     @n = n
-    @spacing = 10
+    @spacing = spacing
   end
 
   def to_multiplication_table
-    generate_primes
+    generate_primes if primes.nil? 
 
     times_table = Array.new(n){ Array.new(n) }
 
@@ -64,7 +64,7 @@ class PrimeTable
   end
 
   def print_empty_columns
-    printf("%-10s" * (n + 1), *Array.new(n+2) { "|" })
+    printf("%-#{spacing}s" * (n + 1), *Array.new(n+2) { "|" })
     print("|\n")
   end
 
