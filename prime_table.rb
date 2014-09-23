@@ -55,7 +55,18 @@ class PrimeTable
   private
 
   def generate_primes
-    primes = Prime.first(n)
+    primes = []
+    current_int = 2
+
+    while primes.length < n
+      is_prime = true
+      2.upto(Math.sqrt(current_int).to_i) do |x|
+        is_prime = false if current_int%x == 0
+      end
+      primes << current_int if is_prime
+      current_int += 1
+    end
+
     @primes = primes
   end
     
